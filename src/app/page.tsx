@@ -119,9 +119,20 @@ export default function Home() {
       </section>
 
       <footer className="mt-auto border-t border-slate-200 py-6">
-        <p className="mx-auto max-w-5xl px-6 text-xs text-slate-400">
-          © 2026 레주메핏
-        </p>
+        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 레주메핏 · 대표 최민영 · 사업자등록번호 680-01-04304</p>
+          <div className="flex gap-4">
+            <Link href="/legal/terms" className="hover:text-slate-600">
+              이용약관
+            </Link>
+            <Link href="/legal/privacy" className="hover:text-slate-600">
+              개인정보처리방침
+            </Link>
+            <Link href="/legal/refund" className="hover:text-slate-600">
+              환불정책
+            </Link>
+          </div>
+        </div>
       </footer>
     </main>
   );
